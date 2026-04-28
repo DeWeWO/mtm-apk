@@ -22,7 +22,7 @@ interface DistributionDao {
     suspend fun delete(item: RationDistributionEntity)
 
     @Query("SELECT * FROM ration_distributions WHERE date = :date AND groupId = :groupId ORDER BY mealType")
-    suspend fun getByDateAndGroup(date: String, groupId: String): List<RationDistributionEntity>
+    fun getByDateAndGroup(date: String, groupId: String): Flow<List<RationDistributionEntity>>
 
     @Query(
         "SELECT date as date, groupId as groupId, SUM(plannedQuantity) as totalPlanned, " +
