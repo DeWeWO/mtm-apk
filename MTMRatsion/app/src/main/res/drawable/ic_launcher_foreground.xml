@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,20 L30,40 L30,80 L78,80 L78,40 Z M46,72 L38,72 L38,56 L46,56 Z M58,72 L50,72 L50,56 L58,56 Z M70,72 L62,72 L62,56 L70,56 Z" />
+        
+    <!-- Simple fork and spoon representation inside -->
+    <path
+        android:fillColor="#1E3A5F"
+        android:pathData="M48,45 C48,45 42,45 42,52 L44,52 L44,65 L46,65 L46,52 L48,52 Z" />
+        
+    <path
+        android:fillColor="#1E3A5F"
+        android:pathData="M60,45 C60,45 65,45 65,50 C65,55 61,55 61,55 L61,65 L59,65 L59,45 Z" />
+</vector>
