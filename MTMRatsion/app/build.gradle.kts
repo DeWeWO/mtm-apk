@@ -16,6 +16,11 @@ android {
     namespace = "uz.mtm.ratsion"
     compileSdk = 34
 
+    buildFeatures {
+        compose = true
+        buildConfig = true
+    }
+
     signingConfigs {
         create("release") {
             storeFile = file(keystoreProperties["storeFile"] as String)
@@ -79,11 +84,6 @@ android {
             buildConfigField("String", "ENV", "\"production\"")
             resValue("string", "app_name", "MTM Ratsion")
         }
-    }
-
-    buildFeatures {
-        compose = true
-        buildConfig = true
     }
 
     composeOptions {
